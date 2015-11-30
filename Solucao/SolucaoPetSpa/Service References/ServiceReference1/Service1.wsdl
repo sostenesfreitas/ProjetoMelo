@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50187/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50187/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:50187/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Biblioteca.ClassesBasicas" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_SelecionarFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionaComboBoxFuncao_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionaComboBoxFuncao" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionaComboBoxFuncao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionaComboBoxFuncaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarServico" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirServico" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarServico" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteServico" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionaComboBoxServico_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionaComboBoxServico" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionaComboBoxServico_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionaComboBoxServicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarEndereco_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarEndereco" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarEndereco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarEnderecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarEnderecoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarEnderecoCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarEnderecoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarEnderecoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarEnderecosDoCPF_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarEnderecosDoCPF" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarEnderecosDoCPF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarEnderecosDoCPFResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirEndereco_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirEndereco" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirEndereco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirEnderecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarEndereco_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarEndereco" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarEndereco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarEnderecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteEndereco_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEndereco" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteEndereco_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEnderecoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionaComboBoxCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionaComboBoxCliente" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionaComboBoxCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionaComboBoxClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAtendimento_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAtendimento" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAtendimento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAtendimentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirAtendimento_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirAtendimento" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirAtendimento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirAtendimentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarAtendimento_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarAtendimento" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarAtendimento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarAtendimentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteAtendimento_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAtendimento" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteAtendimento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAtendimentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAgendaPorAnimal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAgendaPorAnimal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAgendaPorAnimal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAgendaPorAnimalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAgendaPorCpf_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAgendaPorCpf" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAgendaPorCpf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAgendaPorCpfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListaComboBoxATAnimal_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaComboBoxATAnimal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListaComboBoxATAnimal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaComboBoxATAnimalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarComboBoxFuncionario_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarComboBoxFuncionario" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarComboBoxFuncionario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarComboBoxFuncionarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarClientePorCPF_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarClientePorCPF" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarClientePorCPF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarClientePorCPFResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAnimal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAnimal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAnimal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAnimalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAClientePorCPF_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAClientePorCPF" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAClientePorCPF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAClientePorCPFResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAnimaisDoCPF_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAnimaisDoCPF" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAnimaisDoCPF_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAnimaisDoCPFResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAnimalTipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAnimalTipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAnimalTipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAnimalTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAnimalRaca_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAnimalRaca" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAnimalRaca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAnimalRacaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirAnimal_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirAnimal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirAnimal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirAnimalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarAnimal_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarAnimal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarAnimal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarAnimalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteAnimal_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAnimal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteAnimal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAnimalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionaComboBoxAnimal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionaComboBoxAnimal" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionaComboBoxAnimal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionaComboBoxAnimalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAgenda_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAgenda" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarAgenda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarAgendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirAgenda_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirAgenda" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirAgenda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirAgendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarAgenda_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarAgenda" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarAgenda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarAgendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteAgenda_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAgenda" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteAgenda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAgendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CancelarAgenda_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarAgenda" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CancelarAgenda_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarAgendaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarPorCodigo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarPorCodigo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarPorCodigo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarPorCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VerificarExistencia_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarExistencia" />
+  </wsdl:message>
+  <wsdl:message name="IService1_VerificarExistencia_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerificarExistenciaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarRaca_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarRaca" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarRaca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarRacaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarRacaTipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarRacaTipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarRacaTipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarRacaTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirRaca_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirRaca" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirRaca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirRacaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarRaca_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarRaca" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarRaca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarRacaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteRaca_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRaca" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteRaca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRacaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarFuncao_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarFuncao" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarFuncao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarFuncaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirFuncao_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirFuncao" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirFuncao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirFuncaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFuncao_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFuncao" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarFuncao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarFuncaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteFuncao_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFuncao" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteFuncao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFuncaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarTipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_SelecionarTipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SelecionarTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirTipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:InserirTipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InserirTipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InserirTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarTipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarTipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AtualizarTipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarTipoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteTipo_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTipo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteTipo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTipoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="SelecionarFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarFuncionario" message="tns:IService1_SelecionarFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarFuncionarioResponse" message="tns:IService1_SelecionarFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirFuncionario" message="tns:IService1_InserirFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirFuncionarioResponse" message="tns:IService1_InserirFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarFuncionario" message="tns:IService1_AtualizarFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarFuncionarioResponse" message="tns:IService1_AtualizarFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteFuncionario" message="tns:IService1_DeleteFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteFuncionarioResponse" message="tns:IService1_DeleteFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionaComboBoxFuncao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionaComboBoxFuncao" message="tns:IService1_SelecionaComboBoxFuncao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionaComboBoxFuncaoResponse" message="tns:IService1_SelecionaComboBoxFuncao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarServico" message="tns:IService1_SelecionarServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarServicoResponse" message="tns:IService1_SelecionarServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirServico" message="tns:IService1_InserirServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirServicoResponse" message="tns:IService1_InserirServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarServico" message="tns:IService1_AtualizarServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarServicoResponse" message="tns:IService1_AtualizarServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteServico" message="tns:IService1_DeleteServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteServicoResponse" message="tns:IService1_DeleteServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionaComboBoxServico">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionaComboBoxServico" message="tns:IService1_SelecionaComboBoxServico_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionaComboBoxServicoResponse" message="tns:IService1_SelecionaComboBoxServico_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarEndereco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarEndereco" message="tns:IService1_SelecionarEndereco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarEnderecoResponse" message="tns:IService1_SelecionarEndereco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarEnderecoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarEnderecoCliente" message="tns:IService1_SelecionarEnderecoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarEnderecoClienteResponse" message="tns:IService1_SelecionarEnderecoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarEnderecosDoCPF">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarEnderecosDoCPF" message="tns:IService1_SelecionarEnderecosDoCPF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarEnderecosDoCPFResponse" message="tns:IService1_SelecionarEnderecosDoCPF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirEndereco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirEndereco" message="tns:IService1_InserirEndereco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirEnderecoResponse" message="tns:IService1_InserirEndereco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarEndereco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarEndereco" message="tns:IService1_AtualizarEndereco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarEnderecoResponse" message="tns:IService1_AtualizarEndereco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEndereco">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteEndereco" message="tns:IService1_DeleteEndereco_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteEnderecoResponse" message="tns:IService1_DeleteEndereco_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarCliente" message="tns:IService1_SelecionarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarClienteResponse" message="tns:IService1_SelecionarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirCliente" message="tns:IService1_InserirCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirClienteResponse" message="tns:IService1_InserirCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarCliente" message="tns:IService1_AtualizarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarClienteResponse" message="tns:IService1_AtualizarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteCliente" message="tns:IService1_DeleteCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteClienteResponse" message="tns:IService1_DeleteCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionaComboBoxCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionaComboBoxCliente" message="tns:IService1_SelecionaComboBoxCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionaComboBoxClienteResponse" message="tns:IService1_SelecionaComboBoxCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAtendimento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarAtendimento" message="tns:IService1_SelecionarAtendimento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarAtendimentoResponse" message="tns:IService1_SelecionarAtendimento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirAtendimento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirAtendimento" message="tns:IService1_InserirAtendimento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirAtendimentoResponse" message="tns:IService1_InserirAtendimento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarAtendimento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarAtendimento" message="tns:IService1_AtualizarAtendimento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarAtendimentoResponse" message="tns:IService1_AtualizarAtendimento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAtendimento">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteAtendimento" message="tns:IService1_DeleteAtendimento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteAtendimentoResponse" message="tns:IService1_DeleteAtendimento_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAgendaPorAnimal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarAgendaPorAnimal" message="tns:IService1_SelecionarAgendaPorAnimal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarAgendaPorAnimalResponse" message="tns:IService1_SelecionarAgendaPorAnimal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAgendaPorCpf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarAgendaPorCpf" message="tns:IService1_SelecionarAgendaPorCpf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarAgendaPorCpfResponse" message="tns:IService1_SelecionarAgendaPorCpf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaComboBoxATAnimal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListaComboBoxATAnimal" message="tns:IService1_ListaComboBoxATAnimal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListaComboBoxATAnimalResponse" message="tns:IService1_ListaComboBoxATAnimal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarComboBoxFuncionario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarComboBoxFuncionario" message="tns:IService1_SelecionarComboBoxFuncionario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarComboBoxFuncionarioResponse" message="tns:IService1_SelecionarComboBoxFuncionario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarClientePorCPF">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarClientePorCPF" message="tns:IService1_SelecionarClientePorCPF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarClientePorCPFResponse" message="tns:IService1_SelecionarClientePorCPF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAnimal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarAnimal" message="tns:IService1_SelecionarAnimal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarAnimalResponse" message="tns:IService1_SelecionarAnimal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAClientePorCPF">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarAClientePorCPF" message="tns:IService1_SelecionarAClientePorCPF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarAClientePorCPFResponse" message="tns:IService1_SelecionarAClientePorCPF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAnimaisDoCPF">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarAnimaisDoCPF" message="tns:IService1_SelecionarAnimaisDoCPF_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarAnimaisDoCPFResponse" message="tns:IService1_SelecionarAnimaisDoCPF_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAnimalTipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarAnimalTipo" message="tns:IService1_SelecionarAnimalTipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarAnimalTipoResponse" message="tns:IService1_SelecionarAnimalTipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAnimalRaca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarAnimalRaca" message="tns:IService1_SelecionarAnimalRaca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarAnimalRacaResponse" message="tns:IService1_SelecionarAnimalRaca_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirAnimal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirAnimal" message="tns:IService1_InserirAnimal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirAnimalResponse" message="tns:IService1_InserirAnimal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarAnimal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarAnimal" message="tns:IService1_AtualizarAnimal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarAnimalResponse" message="tns:IService1_AtualizarAnimal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAnimal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteAnimal" message="tns:IService1_DeleteAnimal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteAnimalResponse" message="tns:IService1_DeleteAnimal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionaComboBoxAnimal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionaComboBoxAnimal" message="tns:IService1_SelecionaComboBoxAnimal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionaComboBoxAnimalResponse" message="tns:IService1_SelecionaComboBoxAnimal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAgenda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarAgenda" message="tns:IService1_SelecionarAgenda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarAgendaResponse" message="tns:IService1_SelecionarAgenda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirAgenda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirAgenda" message="tns:IService1_InserirAgenda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirAgendaResponse" message="tns:IService1_InserirAgenda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarAgenda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarAgenda" message="tns:IService1_AtualizarAgenda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarAgendaResponse" message="tns:IService1_AtualizarAgenda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAgenda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteAgenda" message="tns:IService1_DeleteAgenda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteAgendaResponse" message="tns:IService1_DeleteAgenda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelarAgenda">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CancelarAgenda" message="tns:IService1_CancelarAgenda_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CancelarAgendaResponse" message="tns:IService1_CancelarAgenda_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarPorCodigo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarPorCodigo" message="tns:IService1_SelecionarPorCodigo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarPorCodigoResponse" message="tns:IService1_SelecionarPorCodigo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerificarExistencia">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/VerificarExistencia" message="tns:IService1_VerificarExistencia_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VerificarExistenciaResponse" message="tns:IService1_VerificarExistencia_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarRaca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarRaca" message="tns:IService1_SelecionarRaca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarRacaResponse" message="tns:IService1_SelecionarRaca_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarRacaTipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarRacaTipo" message="tns:IService1_SelecionarRacaTipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarRacaTipoResponse" message="tns:IService1_SelecionarRacaTipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirRaca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirRaca" message="tns:IService1_InserirRaca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirRacaResponse" message="tns:IService1_InserirRaca_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarRaca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarRaca" message="tns:IService1_AtualizarRaca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarRacaResponse" message="tns:IService1_AtualizarRaca_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRaca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteRaca" message="tns:IService1_DeleteRaca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteRacaResponse" message="tns:IService1_DeleteRaca_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarFuncao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarFuncao" message="tns:IService1_SelecionarFuncao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarFuncaoResponse" message="tns:IService1_SelecionarFuncao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirFuncao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirFuncao" message="tns:IService1_InserirFuncao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirFuncaoResponse" message="tns:IService1_InserirFuncao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFuncao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarFuncao" message="tns:IService1_AtualizarFuncao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarFuncaoResponse" message="tns:IService1_AtualizarFuncao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFuncao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteFuncao" message="tns:IService1_DeleteFuncao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteFuncaoResponse" message="tns:IService1_DeleteFuncao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/SelecionarTipo" message="tns:IService1_SelecionarTipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/SelecionarTipoResponse" message="tns:IService1_SelecionarTipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InserirTipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InserirTipo" message="tns:IService1_InserirTipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InserirTipoResponse" message="tns:IService1_InserirTipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarTipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/AtualizarTipo" message="tns:IService1_AtualizarTipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/AtualizarTipoResponse" message="tns:IService1_AtualizarTipo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTipo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteTipo" message="tns:IService1_DeleteTipo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteTipoResponse" message="tns:IService1_DeleteTipo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SelecionarFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionaComboBoxFuncao">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionaComboBoxFuncao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarServico">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirServico">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarServico">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteServico">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionaComboBoxServico">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionaComboBoxServico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarEndereco">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarEndereco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarEnderecoCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarEnderecoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarEnderecosDoCPF">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarEnderecosDoCPF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirEndereco">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirEndereco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarEndereco">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarEndereco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteEndereco">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteEndereco" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionaComboBoxCliente">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionaComboBoxCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAtendimento">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarAtendimento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirAtendimento">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirAtendimento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarAtendimento">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarAtendimento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAtendimento">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteAtendimento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAgendaPorAnimal">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarAgendaPorAnimal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAgendaPorCpf">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarAgendaPorCpf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaComboBoxATAnimal">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListaComboBoxATAnimal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarComboBoxFuncionario">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarComboBoxFuncionario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarClientePorCPF">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarClientePorCPF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAnimal">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarAnimal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAClientePorCPF">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarAClientePorCPF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAnimaisDoCPF">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarAnimaisDoCPF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAnimalTipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarAnimalTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAnimalRaca">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarAnimalRaca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirAnimal">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirAnimal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarAnimal">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarAnimal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAnimal">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteAnimal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionaComboBoxAnimal">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionaComboBoxAnimal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarAgenda">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarAgenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirAgenda">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirAgenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarAgenda">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarAgenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAgenda">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteAgenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelarAgenda">
+      <soap:operation soapAction="http://tempuri.org/IService1/CancelarAgenda" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarPorCodigo">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarPorCodigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerificarExistencia">
+      <soap:operation soapAction="http://tempuri.org/IService1/VerificarExistencia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarRaca">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarRaca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarRacaTipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarRacaTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirRaca">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirRaca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarRaca">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarRaca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRaca">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteRaca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarFuncao">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarFuncao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirFuncao">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirFuncao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarFuncao">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarFuncao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFuncao">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteFuncao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SelecionarTipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/SelecionarTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InserirTipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/InserirTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarTipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/AtualizarTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTipo">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteTipo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:50187/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

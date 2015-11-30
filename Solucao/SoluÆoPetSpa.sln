@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteca", "Biblioteca\Biblioteca.csproj", "{5207D7DB-C0FC-4DF0-B947-47266BAA8693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolucaoPetSpa", "SolucaoPetSpa\SolucaoPetSpa.csproj", "{09EE5B99-3A78-4FBA-B0CF-84A221F7BC11}"
+	ProjectSection(ProjectDependencies) = postProject
+		{83B6499A-6045-4D25-A660-DDFDC01F2254} = {83B6499A-6045-4D25-A660-DDFDC01F2254}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServidorPetSpa", "ServidorPetSpa\ServidorPetSpa.csproj", "{83B6499A-6045-4D25-A660-DDFDC01F2254}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5207D7DB-C0FC-4DF0-B947-47266BAA8693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5207D7DB-C0FC-4DF0-B947-47266BAA8693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5207D7DB-C0FC-4DF0-B947-47266BAA8693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5207D7DB-C0FC-4DF0-B947-47266BAA8693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09EE5B99-3A78-4FBA-B0CF-84A221F7BC11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EE5B99-3A78-4FBA-B0CF-84A221F7BC11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EE5B99-3A78-4FBA-B0CF-84A221F7BC11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EE5B99-3A78-4FBA-B0CF-84A221F7BC11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83B6499A-6045-4D25-A660-DDFDC01F2254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83B6499A-6045-4D25-A660-DDFDC01F2254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83B6499A-6045-4D25-A660-DDFDC01F2254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83B6499A-6045-4D25-A660-DDFDC01F2254}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

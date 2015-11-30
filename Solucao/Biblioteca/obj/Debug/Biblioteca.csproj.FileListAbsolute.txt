@@ -1,0 +1,19 @@
+C:\Users\miojo\Downloads\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.dll
+C:\Users\miojo\Downloads\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\miojo\Downloads\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
+C:\Users\miojo\Downloads\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.dll
+C:\Users\miojo\Downloads\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.dll
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.dll
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.dll
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.dll
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.pdb
+C:\Users\miojo\Desktop\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.dll
+C:\Users\miojo\Desktop\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\miojo\Desktop\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
+C:\Users\miojo\Desktop\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.dll
+C:\Users\miojo\Desktop\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.pdb

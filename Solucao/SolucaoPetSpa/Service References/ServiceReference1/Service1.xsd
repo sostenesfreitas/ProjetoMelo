@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Biblioteca.ClassesBasicas" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Biblioteca.ClassesBasicas" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfFuncionario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Funcionario" nillable="true" type="tns:Funcionario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFuncionario" nillable="true" type="tns:ArrayOfFuncionario" />
+  <xs:complexType name="Funcionario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Funcao" nillable="true" type="tns:Funcao" />
+      <xs:element minOccurs="0" name="Matricula" type="xs:int" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SobreNome" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Funcionario" nillable="true" type="tns:Funcionario" />
+  <xs:complexType name="Funcao">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoFuncao" type="xs:int" />
+      <xs:element minOccurs="0" name="DescricaoFuncao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NomeFuncao" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Funcao" nillable="true" type="tns:Funcao" />
+  <xs:complexType name="ArrayOfServico">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Servico" nillable="true" type="tns:Servico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfServico" nillable="true" type="tns:ArrayOfServico" />
+  <xs:complexType name="Servico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoServico" type="xs:int" />
+      <xs:element minOccurs="0" name="DescricaoServico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NomeServico" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Servico" nillable="true" type="tns:Servico" />
+  <xs:complexType name="ArrayOfEndereco">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Endereco" nillable="true" type="tns:Endereco" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEndereco" nillable="true" type="tns:ArrayOfEndereco" />
+  <xs:complexType name="Endereco">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Bairro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cep" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cidade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Cliente" nillable="true" type="tns:Cliente" />
+      <xs:element minOccurs="0" name="CodigoEndereco" type="xs:int" />
+      <xs:element minOccurs="0" name="Complemento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Logradouro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Endereco" nillable="true" type="tns:Endereco" />
+  <xs:complexType name="Cliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cpf" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SobreNome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Cliente" nillable="true" type="tns:Cliente" />
+  <xs:complexType name="ArrayOfCliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Cliente" nillable="true" type="tns:Cliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCliente" nillable="true" type="tns:ArrayOfCliente" />
+  <xs:complexType name="ArrayOfAtendimento">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Atendimento" nillable="true" type="tns:Atendimento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAtendimento" nillable="true" type="tns:ArrayOfAtendimento" />
+  <xs:complexType name="Atendimento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Agenda" nillable="true" type="tns:Agenda" />
+      <xs:element minOccurs="0" name="Animal" nillable="true" type="tns:Animal" />
+      <xs:element minOccurs="0" name="Cliente" nillable="true" type="tns:Cliente" />
+      <xs:element minOccurs="0" name="CodigoAtendimento" type="xs:int" />
+      <xs:element minOccurs="0" name="Descricao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Endereco" nillable="true" type="tns:Endereco" />
+      <xs:element minOccurs="0" name="Funcionario" nillable="true" type="tns:Funcionario" />
+      <xs:element minOccurs="0" name="Servico" nillable="true" type="tns:Servico" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Atendimento" nillable="true" type="tns:Atendimento" />
+  <xs:complexType name="Agenda">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Animal" nillable="true" type="tns:Animal" />
+      <xs:element minOccurs="0" name="Cliente" nillable="true" type="tns:Cliente" />
+      <xs:element minOccurs="0" name="CodigoAgenda" type="xs:int" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Encaixe" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Hora" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Servico" nillable="true" type="tns:Servico" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Agenda" nillable="true" type="tns:Agenda" />
+  <xs:complexType name="Animal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cliente" nillable="true" type="tns:Cliente" />
+      <xs:element minOccurs="0" name="CodigoAnimal" type="xs:int" />
+      <xs:element minOccurs="0" name="Idade" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Peso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Raca" nillable="true" type="tns:Raca" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="tns:Tipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Animal" nillable="true" type="tns:Animal" />
+  <xs:complexType name="Raca">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoRaca" type="xs:int" />
+      <xs:element minOccurs="0" name="DescricaoRaca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NomeRaca" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="tns:Tipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Raca" nillable="true" type="tns:Raca" />
+  <xs:complexType name="Tipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoTipo" type="xs:int" />
+      <xs:element minOccurs="0" name="NomeTipo" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Tipo" nillable="true" type="tns:Tipo" />
+  <xs:complexType name="ArrayOfAnimal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Animal" nillable="true" type="tns:Animal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAnimal" nillable="true" type="tns:ArrayOfAnimal" />
+  <xs:complexType name="ArrayOfAgenda">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Agenda" nillable="true" type="tns:Agenda" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAgenda" nillable="true" type="tns:ArrayOfAgenda" />
+  <xs:complexType name="ArrayOfRaca">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Raca" nillable="true" type="tns:Raca" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRaca" nillable="true" type="tns:ArrayOfRaca" />
+  <xs:complexType name="ArrayOfFuncao">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Funcao" nillable="true" type="tns:Funcao" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFuncao" nillable="true" type="tns:ArrayOfFuncao" />
+  <xs:complexType name="ArrayOfTipo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Tipo" nillable="true" type="tns:Tipo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTipo" nillable="true" type="tns:ArrayOfTipo" />
+</xs:schema>

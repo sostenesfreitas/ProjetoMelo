@@ -1,0 +1,32 @@
+C:\Users\miojo\Downloads\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.dll.config
+C:\Users\miojo\Downloads\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.dll
+C:\Users\miojo\Downloads\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.pdb
+C:\Users\miojo\Downloads\SoluçãoPetSpa\ServidorPetSpa\bin\Biblioteca.dll
+C:\Users\miojo\Downloads\SoluçãoPetSpa\ServidorPetSpa\bin\Biblioteca.pdb
+C:\Users\miojo\Downloads\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.csprojResolveAssemblyReference.cache
+C:\Users\miojo\Downloads\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.dll
+C:\Users\miojo\Downloads\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.pdb
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.dll.config
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.dll
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.pdb
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\Biblioteca.dll
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\Biblioteca.pdb
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.csprojResolveAssemblyReference.cache
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.dll
+C:\Users\MegaKingBR\Desktop\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.pdb
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.dll.config
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.dll
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.pdb
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\ServidorPetSpa\bin\Biblioteca.dll
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\ServidorPetSpa\bin\Biblioteca.pdb
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.csprojResolveAssemblyReference.cache
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.dll
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.pdb
+C:\Users\miojo\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.dll.config
+C:\Users\miojo\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.dll
+C:\Users\miojo\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\ServidorPetSpa.pdb
+C:\Users\miojo\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\Biblioteca.dll
+C:\Users\miojo\Desktop\SoluçãoPetSpa\ServidorPetSpa\bin\Biblioteca.pdb
+C:\Users\miojo\Desktop\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.csprojResolveAssemblyReference.cache
+C:\Users\miojo\Desktop\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.dll
+C:\Users\miojo\Desktop\SoluçãoPetSpa\ServidorPetSpa\obj\Debug\ServidorPetSpa.pdb
